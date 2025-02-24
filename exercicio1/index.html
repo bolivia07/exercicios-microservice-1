@@ -34,7 +34,15 @@
     </section>
    
     <!-- Botão para disparar a alteração de cor -->
-    <button id="mudarCorBtn">Mudar cor</button>
+    <button id="mudarCorBtn">Mudar cor do fundo</button>
+
+     <!-- Seção para adicionar itens à lista -->
+  <section id="lista-section">
+    <h2>Lista de Itens</h2>
+    <input type="text" id="itemInput" placeholder="Digite um item">
+    <button id="addItemBtn">Adicionar Item</button>
+    <ul id="listaItens"></ul>
+  </section>
     
     <footer>
         <p>© 2025 Microservice and Web engeneering.</p>
@@ -55,8 +63,29 @@
         secao.style.backgroundColor = 'lightblue';
       }
     });
+
+    // Seleciona os elementos do DOM para a lista
+    const addItemBtn = document.getElementById('addItemBtn');
+    const itemInput = document.getElementById('itemInput');
+    const listaItens = document.getElementById('listaItens');
+
+    // Ao clicar no botão, adiciona um novo item (li) com o texto digitado
+    addItemBtn.addEventListener('click', () => {
+      const texto = itemInput.value.trim();
+      if (texto !== '') {
+        const li = document.createElement('li');
+        li.textContent = texto;
+        // Remove o item ao dar duplo clique
+        li.addEventListener('dblclick', () => {
+          li.remove();
+        });
+        listaItens.appendChild(li);
+        itemInput.value = '';
+        itemInput.focus();
+      }
+    });
   </script>
-  
+
 </body>
 
 </html>
