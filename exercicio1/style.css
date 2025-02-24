@@ -49,6 +49,22 @@ body {
     padding: 20px;
   }
   
+  /* Estilo do botão */
+#mudarCorBtn {
+    background-color: #ff5722;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    margin: 20px auto; /* centraliza o botão */
+    display: block;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  #mudarCorBtn:hover {
+    background-color: #e64a19;
+  }
+  
   /* Estilo do rodapé */
   footer {
     background-color: #4e4848;
