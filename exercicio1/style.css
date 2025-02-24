@@ -1,0 +1,59 @@
+/* Reset básico */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    color: #333;
+  }
+  
+  /* Estilo do cabeçalho */
+  header {
+    background-color: #ae00ff;
+    color: white;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  /* Estilizando o logo */
+  header .logo {
+    max-width: 150px;
+    display: block;
+    margin: 0 auto 10px;
+  }
+  /* Estilo da navegação */
+  nav {
+    background-color: #4e4848;
+  }
+  nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    justify-content: center;
+  }
+  nav ul li {
+    margin: 0 15px;
+  }
+  nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 14px 20px;
+    display: block;
+  }
+  nav ul li a:hover {
+    background-color: #4e4848;
+  }
+  
+  /* Estilo da seção principal */
+  section {
+    padding: 20px;
+  }
+  
+  /* Estilo do rodapé */
+  footer {
+    background-color: #4e4848;
+    color: white;
+    text-align: center;
+    padding: 10px;
+  }
+  
