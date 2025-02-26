@@ -160,6 +160,40 @@ body {
   background-color: #2196F3;
   color: white;
 }
+
+/* Seção da tabela e controles */
+#tabela-section {
+  padding: 20px;
+  text-align: center;
+}
+#controls {
+  margin-bottom: 15px;
+}
+#controls button {
+  background-color: #2196F3;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  margin: 0 5px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#controls button:hover {
+  background-color: #1976D2;
+}
+#dadosTabela {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 80%;
+}
+#dadosTabela th, #dadosTabela td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+#dadosTabela th {
+  background-color: #2196F3;
+  color: white;
+}
   
   
   /* Estilo do rodapé */

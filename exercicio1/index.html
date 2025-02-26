@@ -76,6 +76,15 @@
     </table>
   </section>
 
+  <!-- Seção para exibir a tabela e os controles de filtro -->
+  <section id="tabela-section">
+    <h2>Dados dos Usuários</h2>
+    <div id="controls">
+      <button id="filterBtn">Filtrar Acima de 30 anos</button>
+      <button id="resetBtn">Resetar Filtro</button>
+    </div>
+  </section>
+
      <!-- Seção para adicionar itens à lista -->
   <section id="lista-section">
     <h2>Lista de Itens</h2>
@@ -198,6 +207,53 @@
         });
       })
       .catch(error => console.error('Erro ao fazer requisição:', error));
+
+    // Variável para armazenar os dados originais
+    let originalData = [];
+    const tbody = document.querySelector('#dadosTabela tbody');
+
+    // Função para renderizar a tabela com os dados passados
+    function renderTable(data) {
+      tbody.innerHTML = ""; // Limpa as linhas anteriores
+      data.forEach(item => {
+        const tr = document.createElement('tr');
+
+        const tdNome = document.createElement('td');
+        tdNome.textContent = item.nome;
+        tr.appendChild(tdNome);
+
+        const tdEmail = document.createElement('td');
+        tdEmail.textContent = item.email;
+        tr.appendChild(tdEmail);
+
+        const tdIdade = document.createElement('td');
+        tdIdade.textContent = item.idade;
+        tr.appendChild(tdIdade);
+
+        tbody.appendChild(tr);
+      });
+    }
+
+    // Busca os dados via GET no endpoint
+   
+    fetch("http://demo7996329.mockable.io/list")
+      .then(response => response.json())
+      .then(data => {
+        originalData = data;
+        renderTable(originalData);
+      })
+      .catch(error => console.error('Erro ao fazer requisição:', error));
+
+    // Filtra somente os usuários com idade acima de 18
+    document.getElementById('filterBtn').addEventListener('click', () => {
+      const filteredData = originalData.filter(item => item.idade > 30);
+      renderTable(filteredData);
+    });
+
+    // Reseta o filtro e exibe todos os dados
+    document.getElementById('resetBtn').addEventListener('click', () => {
+      renderTable(originalData);
+    });
 
   </script>
 
