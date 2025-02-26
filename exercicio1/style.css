@@ -1,126 +1,142 @@
 /* Reset básico */
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-    background-color: #f2f2f2;
-    color: #333;
-  }
-  
-  /* Estilo do cabeçalho */
-  header {
-    background-color: #ae00ff;
-    color: white;
-    padding: 20px;
-    text-align: center;
-  }
-  
-  /* Estilizando o logo */
-  header .logo {
-    max-width: 150px;
-    display: block;
-    margin: 0 auto 10px;
-  }
-  /* Estilo da navegação */
-  nav {
-    background-color: #4e4848;
-  }
-  nav ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    display: flex;
-    justify-content: center;
-  }
-  nav ul li {
-    margin: 0 15px;
-  }
-  nav ul li a {
-    color: white;
-    text-decoration: none;
-    padding: 14px 20px;
-    display: block;
-  }
-  nav ul li a:hover {
-    background-color: #4e4848;
-  }
-  
-  /* Estilo da seção principal */
-  section {
-    padding: 20px;
-  }
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  color: #333;
+}
 
-  /* Estilo do botão */
+/* Estilo do cabeçalho */
+header {
+  background-color: #ae00ff;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Estilizando o logo */
+header .logo {
+  max-width: 150px;
+  display: block;
+  margin: 0 auto 10px;
+}
+
+/* Estilo da navegação */
+nav {
+  background-color: #4e4848;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+
+nav ul li {
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  padding: 14px 20px;
+  display: block;
+}
+
+nav ul li a:hover {
+  background-color: #4e4848;
+}
+
+/* Estilo da seção principal */
+section {
+  padding: 20px;
+}
+
+/* Estilo do botão */
 #mudarCorBtn {
-    background-color: #ae00ff;
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin: 20px auto; /* centraliza o botão */
-    display: block;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-  }
-  #mudarCorBtn:hover {
-    background-color: #4b0263;
-  }
-  
-  /* Seção de lista */
-#lista-section {
-    padding: 20px;
-    text-align: center;
-  }
-  #lista-section input[type="text"] {
-    padding: 8px;
-    font-size: 16px;
-    width: 200px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-right: 10px;
-  }
-  #lista-section button {
-    padding: 8px 12px;
-    font-size: 16px;
-    border: none;
-    background-color: #2196F3;
-    color: white;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  #lista-section button:hover {
-    background-color: #1976D2;
-  }
-  #lista-section ul {
-    list-style-type: none;
-    padding: 0;
-    margin-top: 20px;
-  }
-  #lista-section ul li {
-    padding: 10px;
-    background-color: #eee;
-    margin: 5px 0;
-    border-radius: 4px;
-    cursor: pointer;
-  }
+  background-color: #ae00ff;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 20px auto;
+  /* centraliza o botão */
+  display: block;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
 
-  /* Seção do formulário */
+#mudarCorBtn:hover {
+  background-color: #4b0263;
+}
+
+/* Seção de lista */
+#lista-section {
+  padding: 20px;
+  text-align: center;
+}
+
+#lista-section input[type="text"] {
+  padding: 8px;
+  font-size: 16px;
+  width: 200px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-right: 10px;
+}
+
+#lista-section button {
+  padding: 8px 12px;
+  font-size: 16px;
+  border: none;
+  background-color: #2196F3;
+  color: white;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#lista-section button:hover {
+  background-color: #1976D2;
+}
+
+#lista-section ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 20px;
+}
+
+#lista-section ul li {
+  padding: 10px;
+  background-color: #eee;
+  margin: 5px 0;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Seção do formulário */
 #formulario {
   padding: 20px;
   max-width: 400px;
   margin: 0 auto;
 }
+
 #formulario form div {
   margin-bottom: 15px;
 }
+
 #formulario label {
   display: block;
   margin-bottom: 5px;
 }
+
 #formulario input {
   width: 100%;
   padding: 8px;
   box-sizing: border-box;
 }
+
 #formulario button {
   background-color: #2196F3;
   color: white;
@@ -129,6 +145,7 @@ body {
   border-radius: 4px;
   cursor: pointer;
 }
+
 #formulario button:hover {
   background-color: #1976D2;
 }
@@ -146,16 +163,19 @@ body {
   padding: 20px;
   text-align: center;
 }
+
 #dadosTabela {
   margin: 0 auto;
   border-collapse: collapse;
   width: 80%;
 }
-#dadosTabela th, 
+
+#dadosTabela th,
 #dadosTabela td {
   border: 1px solid #ccc;
   padding: 10px;
 }
+
 #dadosTabela th {
   background-color: #2196F3;
   color: white;
@@ -166,9 +186,11 @@ body {
   padding: 20px;
   text-align: center;
 }
+
 #controls {
   margin-bottom: 15px;
 }
+
 #controls button {
   background-color: #2196F3;
   color: white;
@@ -178,18 +200,23 @@ body {
   border-radius: 4px;
   cursor: pointer;
 }
+
 #controls button:hover {
   background-color: #1976D2;
 }
+
 #dadosTabela {
   margin: 0 auto;
   border-collapse: collapse;
   width: 80%;
 }
-#dadosTabela th, #dadosTabela td {
+
+#dadosTabela th,
+#dadosTabela td {
   border: 1px solid #ccc;
   padding: 10px;
 }
+
 #dadosTabela th {
   background-color: #2196F3;
   color: white;
@@ -202,15 +229,18 @@ body {
   margin: 0 auto;
   text-align: center;
 }
+
 #addForm {
   margin-bottom: 20px;
 }
+
 #addForm input {
   padding: 8px;
   margin: 5px;
   border: 1px solid #ccc;
   border-radius: 4px;
 }
+
 #addForm button {
   padding: 8px 12px;
   background-color: #2196F3;
@@ -219,6 +249,7 @@ body {
   border-radius: 4px;
   cursor: pointer;
 }
+
 #addForm button:hover {
   background-color: #1976D2;
 }
@@ -229,14 +260,18 @@ body {
   border-collapse: collapse;
   margin: 0 auto;
 }
-#itemsTable th, #itemsTable td {
+
+#itemsTable th,
+#itemsTable td {
   border: 1px solid #ccc;
   padding: 10px;
 }
+
 #itemsTable th {
   background-color: #2196F3;
   color: white;
 }
+
 #itemsTable button {
   padding: 5px 10px;
   margin: 0 2px;
@@ -244,6 +279,7 @@ body {
   border-radius: 4px;
   cursor: pointer;
 }
+
 #itemsTable button:hover {
   opacity: 0.8;
 }
@@ -255,6 +291,7 @@ body {
   border: 1px solid #ccc;
   border-radius: 4px;
 }
+
 #addForm button {
   padding: 8px 12px;
   background-color: #2196F3;
@@ -263,6 +300,7 @@ body {
   border-radius: 4px;
   cursor: pointer;
 }
+
 #addForm button:hover {
   background-color: #1976D2;
 }
@@ -273,13 +311,71 @@ body {
   font-weight: bold;
   color: green;
 }
-  
-  
-  /* Estilo do rodapé */
-  footer {
-    background-color: #4e4848;
-    color: white;
-    text-align: center;
-    padding: 10px;
-  }
-  
+
+/* Seção de Listagem */
+#listar {
+  margin-bottom: 30px;
+}
+#listar table {
+  width: 100%;
+  border-collapse: collapse;
+}
+#listar table, 
+#listar th, 
+#listar td {
+  border: 1px solid #ccc;
+}
+#listar th, 
+#listar td {
+  padding: 10px;
+  text-align: left;
+}
+#listar th {
+  background-color: #2196F3;
+  color: #fff;
+}
+
+/* Seção de Cadastro */
+#cadastrar form {
+  max-width: 400px;
+  margin: 0 auto 30px auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  background-color: #fafafa;
+}
+#cadastrar form div {
+  margin-bottom: 15px;
+}
+#cadastrar form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+#cadastrar form input {
+  width: 100%;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+#cadastrar form button {
+  padding: 10px 20px;
+  background-color: #2196F3;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+#cadastrar form button:hover {
+  background-color: #1976D2;
+}
+
+
+/* Estilo do rodapé */
+footer {
+  background-color: #4e4848;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
