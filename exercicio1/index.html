@@ -59,6 +59,23 @@
     <!-- Botão para disparar a alteração de cor -->
   <button id="mudarCorBtn">Mudar cor do fundo</button>
 
+  <!-- Seção onde a tabela será exibida -->
+  <section id="tabela-section">
+    <h2>Lista de Usuários</h2>
+    <table id="dadosTabela">
+      <thead>
+        <tr>
+          <th>Nome</th>
+          <th>E-mail</th>
+          <th>Idade</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- As linhas serão inseridas dinamicamente -->
+      </tbody>
+    </table>
+  </section>
+
      <!-- Seção para adicionar itens à lista -->
   <section id="lista-section">
     <h2>Lista de Itens</h2>
@@ -70,6 +87,11 @@
   <footer>
     <p>© 2025 Microservice and Web engeneering.</p>
   </footer>
+
+
+
+
+
 
     <!-- Script para manipulação dinâmica com JavaScript -->
   <script>
@@ -108,7 +130,7 @@
       }
     });
 
-    fetch("http://demo7996329.mockable.io/")
+    fetch("http://demo7996329.mockable.io")
     .then(response => response.json())
     .then(data => {
       console.log(data); // Veja no console o que está sendo retornado
@@ -147,6 +169,35 @@
       })
       .catch(error => console.error('Erro ao enviar dados:', error));
     });
+
+
+    fetch("http://demo7996329.mockable.io/list")
+      .then(response => response.json())
+      .then(data => {
+        // Seleciona o tbody da tabela onde as linhas serão inseridas
+        const tbody = document.querySelector('#dadosTabela tbody');
+        // Limpa o tbody (caso haja dados anteriores)
+        tbody.innerHTML = "";
+        // Para cada objeto do array, cria uma nova linha com as células correspondentes
+        data.forEach(item => {
+          const tr = document.createElement('tr');
+          
+          const tdNome = document.createElement('td');
+          tdNome.textContent = item.nome;
+          tr.appendChild(tdNome);
+          
+          const tdEmail = document.createElement('td');
+          tdEmail.textContent = item.email;
+          tr.appendChild(tdEmail);
+          
+          const tdIdade = document.createElement('td');
+          tdIdade.textContent = item.idade;
+          tr.appendChild(tdIdade);
+          
+          tbody.appendChild(tr);
+        });
+      })
+      .catch(error => console.error('Erro ao fazer requisição:', error));
 
   </script>
 

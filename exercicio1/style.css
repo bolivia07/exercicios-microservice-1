@@ -139,6 +139,27 @@ body {
   font-size: 18px;
   color: #4CAF50;
 }
+
+
+/* Seção da tabela */
+#tabela-section {
+  padding: 20px;
+  text-align: center;
+}
+#dadosTabela {
+  margin: 0 auto;
+  border-collapse: collapse;
+  width: 80%;
+}
+#dadosTabela th, 
+#dadosTabela td {
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+#dadosTabela th {
+  background-color: #2196F3;
+  color: white;
+}
   
   
   /* Estilo do rodapé */
